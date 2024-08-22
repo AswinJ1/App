@@ -1,0 +1,189 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Use a modern, clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #0f3d57;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #0c2c3e;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-10px); /* Slight elevation on hover */
+}
+
+@media(min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+.profile-section {
+    background-color: #124f68;
+    text-align: center;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 4px solid #ffffff3b; /* Slight border to make the picture pop */
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.role {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #b3c5ca;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+.location-age {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.main-section {
+    flex: 2;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-section h2 {
+    font-size: 24px;
+    color: #b3c5ca;
+    margin-bottom: 10px;
+}
+
+.main-section h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.resume-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 30px;
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.resume-button:hover {
+    background-color: white;
+    color: #0f3d57;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.portfolio-item {
+    background-color: #13425a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 240px; /* Slightly larger than before */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    background-color: #145a7c;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+}
+.resume-button a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the button's text color */
+    display: block; /* Ensure the entire button area is clickable */
+    width: 100%;
+    height: 100%;
+}
+.portfolio-item a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the parent element's text color */
+    display: block; /* Make the entire portfolio item clickable */
+    text-align: center; /* Ensure the text is centered */
+}
